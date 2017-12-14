@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.fiap.calculators.fragments.IMCFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="SEXO"/>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maxculino"
+                android:layout_weight="0.5"
+            />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feminino"
+                android:layout_weight="0.5"
+                />
+        </RadioGroup>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:text="Altura(M)"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:text="Peso(Kg)"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/et_altura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="0.5" />
+        <EditText
+            android:id="@+id/et_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="0.5"/>
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Calcular peso"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:text="Seu EMC é "/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/boy"/>
+</LinearLayout>
+
+</LinearLayout>
+
+
+</FrameLayout>
